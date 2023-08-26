@@ -1,0 +1,66 @@
+{
+  "type": "LinearLayout",
+  "android": "http://schemas.android.com/apk/res/android",
+  "app": "http://schemas.android.com/apk/res-auto",
+  "layout_width": "match_parent",
+  "layout_height": "wrap_content",
+  "orientation": "vertical",
+  "children": [
+    {
+      "type": "TextView",
+      "id": "FormLabel",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "gravity": "center",
+      "text": "Form 4",
+      "textSize": "50sp",
+      "layout_constraintTop_toTopOf": "parent"
+    },
+    {
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "orientation": "horizontal",
+      "weightSum": "2",
+      "children": [
+        {
+          "type": "TextView",
+          "id": "textView",
+          "layout_width": "0dp",
+          "layout_height": "match_parent",
+          "layout_weight": "1",
+          "padding": "5dp",
+          "text": "Name",
+          "textSize": "18sp"
+        },
+        {
+          "type": "EditText",
+          "id": "editText",
+          "layout_width": "0dp",
+          "layout_height": "wrap_content",
+          "layout_weight": "1",
+          "ems": "10",
+          "inputType": "textPersonName",
+          "text": "@string/Empty"
+        }
+      ]
+    },
+    {
+      "type": "CheckBox",
+      "id": "checkBox",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "text": "Are you a male?",
+      "textSize": "18sp"
+    },
+    {
+      "type": "TextView",
+      "id": "textView3",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "padding": "5dp",
+      "text": "Connect together",
+      "textSize": "18sp"
+    }
+  ]
+}
