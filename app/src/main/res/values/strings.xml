@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Connect Together</string>
+    <string name="Empty"> </string>
+    <string name="LogOut">Log out</string>
+
+    <string name="MobileNumber">Mobile Number</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="KeepMeSignedIn">Keep me signed in</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="Forget">Forget password?</string>
+
+    <string name="ResetPassword">Reset Password</string>
+
+    <string name="StayInCondo">Do you stay in \"Sky Ville\" Condo?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+
+    <string name="Chat">Chat</string>
+    <string name="Sensors">Sensors</string>
+    <string name="Move">Move</string>
+
+    <string name="Contacts">Contacts</string>
+    <string name="ConnectWithVolunteer">Connect with volunteer</string>
+    <string name="Make">Make New Friends</string>
+
+    <string name="Organisation">Organisation</string>
+    <string name="gender">Gender</string>
+    <string name="MakeEdits">Make Edits</string>
+    <string name="Save">Save</string>
+
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+
+    <string name="ProfilePicture">Profile Picture</string>
+    <string name="Info">Name: %1$s\nGender: %2$s\nOrganisation: \n%3$s</string>
+    <string name="Info2">Name: %1$s\nGender: %2$s</string>
+    <string name="Status">Status</string>
+
+    <string name="Searching">Searching</string>
+    <string name="CancelSearch">Cancel search</string>
+
+    <string name="WaitingForReply">Waiting for reply</string>
+
+    <string name="Answer">Answer</string>
+    <string name="Hangup">Hang up</string>
+
+    <string name="CallHasEnded">Call has ended</string>
+
+    <string name="AddFriend">Add Friend</string>
+
+    <string name="FriendRequestSent">Friend request sent</string>
+    <string name="FriendNotAdded">Friend not added</string>
+
+    <string name="Registration">Registration</string>
+    <string name="EnterPasswordAgain">Enter password again</string>
+    <string name="EnterVerificationCode">Enter verification code</string>
+    <string name="Next">Next</string>
+    <string name="Verify">Verify</string>
+    <string name="Back">Back</string>
+
+    <string name="EnterYourDetails">Enter your details</string>
+    <string name="Name">Name</string>
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="Upload">Upload</string>
+
+    <string name="GetStarted">Let\'s get started</string>
+
+    <string name="Form">Form</string>
+    <string name="Form1">Form 1</string>
+    <string name="Form2">Form 2</string>
+    <string name="Form3">Form 3</string>
+    <string name="Field1">Field 1</string>
+    <string name="Field2">Field 2</string>
+    <string name="Field3">Field 3</string>
+    <string name="Field4">Field 4</string>
+    <string name="Option1">Option 1</string>
+    <string name="Option2">Option 2</string>
+    <string name="Option3">Option 3</string>
+    <string name="Question">This is a random question</string>
+    <string name="Done">Done</string>
+
+    <string name="InformationIsTrue">Ensure all stated information is true</string>
+
+    <string name="PendingRequest">Your request is pending. Please wait for response.</string>
+    <string name="Cancel">Cancel</string>
+    <string name="RequestRejected">Your request has been rejected.</string>
+    <string name="RequestVerified">You have been verified.</string>
+
+
+    <string name="NameOfDevice">Name of device</string>
+    <string name="Connect">Connect</string>
+    <string name="Connected">Connected</string>
+    <string name="ConnectionFailed">Connection failed</string>
+    <string name="Disconnected">Disconnected</string>
+
+    <string name="ssid">SSID: </string>
+    <string name="Send">Send</string>
+    <string name="Retrieve">Retrieve</string>
+
+    <string name="BPM">Beats per minute</string>
+    <string name="Temperature">Temperature (\u2103)</string>
+    <string name="SkinMoisture">Skin Moisture (%)</string>
+    <string name="TotalSteps">Total Steps</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+
+
+    <string name="AutoDetect">Auto detect location</string>
+    <string name="BuggyCalled">Buggy is called\n</string>
+    <string name="BuggyLongLocation">The buggy is at %1$s (%2$d)\n</string>
+    <string name="BuggyShortLocation">The buggy is at location %1$d\n</string>
+    <string name="BuggyReached">Buggy has reached %1$s\n</string>
+    <string name="BuggyLeft">Buggy has left\n</string>
+</resources>

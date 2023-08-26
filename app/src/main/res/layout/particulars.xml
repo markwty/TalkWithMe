@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/DetailsConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false">
+
+            <ImageView
+                android:id="@+id/ProfileImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:foregroundGravity="center"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/male"
+                android:contentDescription="@string/ProfilePicture" />
+
+            <Button
+                android:id="@+id/UploadButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:text="@string/Upload"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProfileImageView" />
+
+            <TextView
+                android:id="@+id/NameLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:labelFor="@+id/NameEntry"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/Name"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/NameEntry"
+                app:layout_constraintEnd_toStartOf="@+id/NameEntry"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/NameEntry" />
+
+            <EditText
+                android:id="@+id/NameEntry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="@string/Empty"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/UploadButton"
+                android:autofillHints="@string/Name" />
+
+            <TextView
+                android:id="@+id/MobileLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:labelFor="@+id/MobileEntry"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/Mobile"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/MobileEntry"
+                app:layout_constraintEnd_toStartOf="@+id/MobileEntry"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/MobileEntry" />
+
+            <EditText
+                android:id="@+id/MobileEntry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLength="8"
+                android:text="@string/Empty"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NameEntry"
+                android:autofillHints="@string/Mobile" />
+
+            <TextView
+                android:id="@+id/GenderLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/gender"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/MobileEntry"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MobileEntry" />
+
+            <Spinner
+                android:id="@+id/GenderSpinner"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:clickable="false"
+                android:entries="@array/Gender"
+                app:layout_constraintBottom_toBottomOf="@+id/GenderLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/GenderLabel"
+                app:layout_constraintTop_toBottomOf="@+id/MobileEntry" />
+
+            <TextView
+                android:id="@+id/OrganisationLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:labelFor="@+id/OrganisationEntry"
+                android:text="@string/Organisation"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/OrganisationEntry"
+                app:layout_constraintEnd_toStartOf="@+id/OrganisationEntry"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/OrganisationEntry" />
+
+            <EditText
+                android:id="@+id/OrganisationEntry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="@string/Empty"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/GenderSpinner"
+                android:autofillHints="@string/Organisation" />
+
+            <TextView
+                android:id="@+id/PasswordLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:labelFor="@+id/PasswordEntry"
+                android:text="@string/Password"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/PasswordEntry"
+                app:layout_constraintEnd_toStartOf="@+id/PasswordEntry"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/PasswordEntry" />
+
+            <EditText
+                android:id="@+id/PasswordEntry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/OrganisationEntry"
+                android:autofillHints="@string/Password" />
+
+            <TextView
+                android:id="@+id/StayInCondoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/StayInCondo"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PasswordEntry" />
+
+            <CheckBox
+                android:id="@+id/StayInCondoCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:enabled="false"
+                android:text="@string/Empty"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/StayInCondoLabel"
+                app:layout_constraintStart_toEndOf="@+id/StayInCondoLabel"
+                app:layout_constraintTop_toBottomOf="@+id/PasswordEntry" />
+
+            <Button
+                android:id="@+id/MakeEditsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/MakeEdits"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/StayInCondoCheckBox" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/VerifyLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/EnterVerificationCodeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/EnterVerificationCodeEntry"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/EnterVerificationCode"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EnterVerificationCodeEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <Button
+                    android:id="@+id/VerifyButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/Verify"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BackButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/Back"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
